@@ -5,11 +5,13 @@ Rails.application.routes.draw do
 # Sesssion Controller for Log in
 
 post 'login', to: 'sessions#create'
-
 delete 'logout', to:'sessions#destroy'
 
 
 
+# Recipes controller for the user when user is logged in
+get 'recipes', to: 'recipes#index'
+post 'recipes', to: 'recipes#create'
 
 
 

@@ -84,7 +84,7 @@ function NewRecipe({ user }) {
           </FormField>
           <FormField>
             {errors.map((err) => (
-              <Error key={err}>{err}</Error>
+              <Error key={err} err={err}></Error>
             ))}
           </FormField>
         </form>
